@@ -1,4 +1,3 @@
-<!-- COLE NO INDEX.HTML -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,7 +15,8 @@ body{
     line-height:1.6;
 }
 
-hheader{
+/* HEADER */
+header{
     background:#000;
     color:#fff;
     padding:15px 60px;
@@ -45,10 +45,6 @@ hheader{
     letter-spacing:2px;
 }
 
-.logo-area h1{
-    font-size:20px;
-    letter-spacing:2px;
-}
 nav a{
     color:#fff;
     text-decoration:none;
@@ -56,15 +52,16 @@ nav a{
     font-size:14px;
 }
 
+/* HERO */
 .hero{
     position:relative;
     background:url('fabrica.jpeg') center/cover no-repeat;
     color:#fff;
-    padding:120px 20px;
-    text-align:center;
+    padding:140px 20px;
     display:flex;
     align-items:center;
     justify-content:center;
+    text-align:center;
 }
 
 .hero::before{
@@ -77,17 +74,31 @@ nav a{
     background:rgba(11,61,145,0.75);
 }
 
-.hero h2,
-.hero p,
-.hero .btn{
+.hero-content{
     position:relative;
     z-index:1;
+    max-width:800px;
 }
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.iso-badge{
+    background:#1b8f3c;
+    padding:6px 12px;
+    border-radius:4px;
+    font-weight:600;
 }
 
 .btn{
     display:inline-block;
-    margin-top:25px;
     padding:14px 35px;
     background:#1b8f3c;
     color:#fff;
@@ -95,6 +106,7 @@ nav a{
     font-weight:600;
 }
 
+/* SECTIONS */
 section{
     padding:80px 60px;
     max-width:1200px;
@@ -137,6 +149,7 @@ section{
     height:100%;
 }
 
+/* FOOTER */
 footer{
     background:#000;
     color:#fff;
@@ -162,10 +175,16 @@ footer{
     </nav>
 </header>
 
-<div class="hero-content">
-    <h2>Excelência em Artefatos Técnicos de Borracha</h2>
-    <p>Empresa certificada ISO 9001:2015 com forte atuação industrial e automotiva.</p>
-    <a class="btn" href="#contato">Solicitar Orçamento</a>
+<div class="hero">
+    <div class="hero-content">
+        <h2>Excelência em Artefatos Técnicos de Borracha</h2>
+        <p>
+            Empresa certificada 
+            <span class="iso-badge">ISO 9001:2015</span> 
+            com forte atuação industrial e automotiva.
+        </p>
+        <a class="btn" href="#contato">Solicitar Orçamento</a>
+    </div>
 </div>
 
 <section id="empresa">
