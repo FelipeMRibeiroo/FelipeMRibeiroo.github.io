@@ -16,13 +16,15 @@ body{
     line-height:1.6;
 }
 
-header{
+hheader{
     background:#000;
     color:#fff;
     padding:15px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+    border-bottom:4px solid #1b8f3c;
 }
 
 .logo-area{
@@ -42,6 +44,11 @@ header{
     font-size:20px;
     letter-spacing:2px;
 }
+
+.logo-area h1{
+    font-size:20px;
+    letter-spacing:2px;
+}
 nav a{
     color:#fff;
     text-decoration:none;
@@ -50,10 +57,31 @@ nav a{
 }
 
 .hero{
-    background:#0b3d91;
+    position:relative;
+    background:url('fabrica.jpeg') center/cover no-repeat;
     color:#fff;
-    padding:100px 20px;
+    padding:120px 20px;
     text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(11,61,145,0.75);
+}
+
+.hero h2,
+.hero p,
+.hero .btn{
+    position:relative;
+    z-index:1;
 }
 
 .hero h2{
