@@ -19,13 +19,28 @@ body{
 header{
     background:#000;
     color:#fff;
-    padding:20px 60px;
+    padding:15px 60px;
     display:flex;
     justify-content:space-between;
-    align-items:center;    
+    align-items:center;
 }
-.logo img{
-    height:60px;
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    height:50px;
+    background:#fff;
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.logo-area h1{
+    font-size:20px;
+    letter-spacing:2px;
 }
 nav a{
     color:#fff;
@@ -110,8 +125,9 @@ footer{
 <body>
 
 <header>
-    <div class="logo">
+    <div class="logo-area">
         <img src="logomr.png" alt="Master Rubber">
+        <h1>MASTER RUBBER</h1>
     </div>
 
     <nav>
