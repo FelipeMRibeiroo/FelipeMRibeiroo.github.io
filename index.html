@@ -1,3 +1,4 @@
+<!-- COLE NO INDEX.HTML -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,102 +7,100 @@
 <title>Master Rubber | Artefatos Técnicos de Borracha</title>
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#ffffff;
     color:#222;
+    line-height:1.6;
 }
 
 header{
-    background:#0f0f0f;
-    color:white;
-    padding:20px 50px;
+    background:#000;
+    color:#fff;
+    padding:20px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
-header h1{
-    margin:0;
-    color:#d40000;
-}
-
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
-    margin-left:25px;
+    margin-left:30px;
     font-size:14px;
 }
 
 .hero{
-    background:linear-gradient(120deg,#0f0f0f,#8b0000);
-    color:white;
-    padding:120px 20px;
+    background:#0b3d91;
+    color:#fff;
+    padding:100px 20px;
     text-align:center;
 }
 
 .hero h2{
-    font-size:42px;
+    font-size:36px;
     margin-bottom:20px;
 }
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:18px;
-}
-
 .btn{
-    margin-top:30px;
     display:inline-block;
-    background:white;
-    color:#8b0000;
-    padding:15px 35px;
-    font-weight:bold;
-    border-radius:4px;
+    margin-top:25px;
+    padding:14px 35px;
+    background:#1b8f3c;
+    color:#fff;
     text-decoration:none;
+    font-weight:600;
 }
 
 section{
-    padding:80px 20px;
+    padding:80px 60px;
     max-width:1200px;
     margin:auto;
 }
 
-section h3{
-    text-align:center;
-    margin-bottom:50px;
-    font-size:28px;
-    color:#8b0000;
+.section-title{
+    font-size:26px;
+    margin-bottom:40px;
+    color:#0b3d91;
+    border-bottom:2px solid #1b8f3c;
+    display:inline-block;
+    padding-bottom:6px;
 }
 
 .grid{
-    display:flex;
-    flex-wrap:wrap;
-    gap:30px;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
-.card{
-    background:white;
-    padding:30px;
-    border-radius:8px;
-    width:320px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+.grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
 }
 
-.quality{
-    background:#111;
-    color:white;
-    text-align:center;
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+}
+
+.video-container iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 footer{
     background:#000;
-    color:white;
+    color:#fff;
     text-align:center;
-    padding:25px;
+    padding:30px;
 }
 </style>
 </head>
@@ -111,83 +110,54 @@ footer{
 <header>
     <h1>MASTER RUBBER</h1>
     <nav>
-        <a href="#sobre">Empresa</a>
-        <a href="#processos">Processos</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#qualidade">Qualidade</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#infraestrutura">Infraestrutura</a>
+        <a href="#video">Institucional</a>
         <a href="#contato">Contato</a>
     </nav>
 </header>
 
 <div class="hero">
-    <h2>Engenharia Aplicada em Artefatos Técnicos de Borracha</h2>
-    <p>
-        Especialistas no desenvolvimento e fabricação de peças técnicas em elastômeros
-        para diversos segmentos industriais, com forte presença na linha automotiva.
-    </p>
+    <h2>Excelência em Artefatos Técnicos de Borracha</h2>
+    <p>Empresa certificada ISO 9001:2015 com forte atuação industrial e automotiva.</p>
     <a class="btn" href="#contato">Solicitar Orçamento</a>
 </div>
 
-<section id="sobre">
-    <h3>Quem Somos</h3>
-    <p style="text-align:center; max-width:900px; margin:auto;">
-        Fundada em 2000, a Master Rubber é uma empresa brasileira especializada
-        em peças técnicas em elastômeros. Atuamos com engenharia aplicada,
-        desenvolvimento próximo ao cliente e flexibilidade produtiva,
-        oferecendo alta eficiência com baixo investimento em ferramental.
+<section id="empresa">
+    <div class="section-title">Quem Somos</div>
+    <p>
+        Desde 2000, a Master Rubber atua no desenvolvimento e fabricação
+        de peças técnicas em elastômeros, oferecendo engenharia aplicada,
+        flexibilidade produtiva e confiabilidade técnica.
     </p>
 </section>
 
-<section id="processos">
-    <h3>Processos e Materiais</h3>
+<section id="infraestrutura">
+    <div class="section-title">Infraestrutura</div>
     <div class="grid">
-        <div class="card">
-            <h4>Vulcanização por Compressão</h4>
-            <p>Produção em prensas hidráulicas com alto controle dimensional e repetibilidade.</p>
-        </div>
-        <div class="card">
-            <h4>Elastômeros Processados</h4>
-            <p>EPDM, NBR, SBR, NR, VMQ (Silicone), FKM e CR conforme ASTM, SAE ou especificação do cliente.</p>
-        </div>
-        <div class="card">
-            <h4>Metal-Borracha</h4>
-            <p>Componentes com elevada confiabilidade estrutural e aderência controlada entre materiais.</p>
-        </div>
+        <img src="imagens/fabrica1.jpg" alt="Fábrica Master Rubber">
+        <img src="imagens/prensa.jpg" alt="Prensas hidráulicas">
+        <img src="imagens/laboratorio.jpg" alt="Laboratório de metrologia">
     </div>
 </section>
 
-<section id="portfolio">
-    <h3>Portfólio de Produtos</h3>
-    <div class="grid">
-        <div class="card">Anéis O’ring e Especiais</div>
-        <div class="card">Grommets</div>
-        <div class="card">Peças Metal-Borracha</div>
-        <div class="card">Coifas</div>
-        <div class="card">Vedações Especiais</div>
-        <div class="card">Gaxetas</div>
+<section id="video">
+    <div class="section-title">Vídeo Institucional</div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+        frameborder="0" allowfullscreen></iframe>
     </div>
-</section>
-
-<section id="qualidade" class="quality">
-    <h3>Qualidade e Certificação</h3>
-    <p style="max-width:900px; margin:auto;">
-        Empresa certificada ISO 9001:2015 desde 2019.
-        Laboratório de metrologia completo com instrumentos calibrados regularmente.
-        Gestão próxima e proativa, atendendo requisitos específicos de clientes e montadoras.
-    </p>
 </section>
 
 <section id="contato">
-    <h3>Contato Comercial</h3>
-    <p style="text-align:center;">
-        📍 Diadema - SP<br>
-        📞 (11) 4056-7033<br>
-        ✉ masterrubber@uol.com.br
-    </p>
+    <div class="section-title">Contato</div>
+    Diadema – SP<br>
+    (11) 4056-7033<br>
+    masterrubber@uol.com.br
 </section>
 
 <footer>
-    © 2026 Master Rubber - Artefatos Técnicos de Borracha
+© 2026 Master Rubber | Todos os direitos reservados
 </footer>
 
 </body>
